@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "greekmod",
+	"version": "${version}",
+	"name": "Greek Mod",
+	"description": "Greek Myth based mod by Psychorian!",
+	"authors": [
+		"Psychorian"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/greekmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.psychorian.greekmod.GreekMod"
+		],
+		"fabric-datagen": [
+			"net.psychorian.greekmod.GreekModDataGenerator"
+		],
+      "client": [
+        "net.psychorian.greekmod.GreekModClient"
+      ]
+	},
+	"mixins": [
+		"greekmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
